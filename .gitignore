@@ -31,8 +31,5 @@ build
 .*.swp
 .*.swn
 
-# Extra files
-data/*
-
 # Tags from ctags
 tags
