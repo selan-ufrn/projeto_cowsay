@@ -68,9 +68,9 @@ Usage: cowsay [-h] [-bdgpstwy] [-E eyes] [-T tongue] [-F cowfile] [-J alignment]
              - wrapcolunm is an integer value in [1,100].
 ```
 
-Note that all the arguments enclosed in square brackets, `[`_parameter_`]`, are optional and may not be provided. All options in upper case letter requires an argument: `E`, `T`, `F`, `J`, and `W`. Other options work like a boolean value, turning on some internal features. For instance, if you provide `-g` the cow will be displayed with a *greedy* face.
+Note that all the arguments enclosed in square brackets, `[`_parameter_`]`, are optional and may not be provided. All options in upper case letter requires an argument: `E`, `T`, `F`, `J`, and `W`. Other options work like a boolean value, turning on some internal feature. For instance, if you provide `-g` the cow will be displayed with a *greedy* face.
 
-There are several pre-defined **modes** with change the appearance of the cow depending on its particular emotional/physical state. These modes basically affects the cow's eyes and tongue, while the body remains unchanged. Alternatively, you may want to manually define how the cow's eyes and tongue should be displayed by providing a suitable string to the proper option. See below all the modes you will need to support.
+There are several pre-defined **modes** that change the appearance of the cow depending on its particular emotional/physical state. These modes basically affects the cow's eyes and tongue, while the body remains unchanged. Alternatively, you may want to manually define how the cow's eyes and tongue should be displayed by providing a suitable string to the proper option. See below all the modes you will need to support.
 
 ```
  ^__^               ^__^               ^__^               ^__^               ^__^
