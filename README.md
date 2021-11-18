@@ -257,7 +257,7 @@ Additionally, this class keeps track of the message alignment, which may be eith
 
 ## The `CLIOption` struct
 
-This struct stores all the information that comes from the command-line arguments. Because this is a regular object it might be passed around to the other objects as an argument. This would enable both the `Cow` and `BillBoard` classes to have access to the information they need to function.
+This struct stores all the information that comes from the command-line arguments. Because this is a regular object it might be passed around to the other objects as an argument. This would enable both the `Cow` and `BillBoard` classes to have access to the information they need to work.
 
 Because all the command-line arguments of the `cowsay` are optional, I recommend that you create the fields of this struct as [`std::optional<>`](https://en.cppreference.com/w/cpp/utility/optional) objects. This template class was added to the C++17 standard and it "_manages an optional contained value, i.e. a value that may or may not be present._" This make this object ideal to represent the CLI options.
 
