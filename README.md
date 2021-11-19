@@ -43,7 +43,7 @@ $ ./cowsay < data/basic_text.txt
                ||----w |
                ||     ||
 ```
-This project will help you develop your object-oriented programming skills since you need to model this application with classes. This assignment also relies heavely on [strings](https://en.cppreference.com/w/cpp/string/basic_string) and [stream](https://en.cppreference.com/w/cpp/io/basic_ostringstream) manipulation, as well as the processing and parsing of command line arguments to support a CLI. Of course, we will also have the chance to choose a good data structure to hold the data and create the desired output.
+This project will help you develop your object-oriented programming skills since you need to model this application with classes. This assignment also relies heavily on [strings](https://en.cppreference.com/w/cpp/string/basic_string) and [stream](https://en.cppreference.com/w/cpp/io/basic_ostringstream) manipulation, as well as the processing and parsing of command line arguments to support a CLI. Of course, we will also have the chance to choose a good data structure to hold the data and create the desired output.
 
 # Input
 
