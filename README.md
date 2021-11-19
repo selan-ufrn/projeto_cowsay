@@ -107,7 +107,7 @@ Argument-dependent options
 + `-E eyes`: selects the appearance of the cow's eyes, in which case the first two characters of the argument string will be used. The default eyes are `oo`. The eyes-string must be two characters long.
 + `-T tongue`: selects the appearance of the cow's tongue. The tongue-string also must be two characters long and does not appear by default.
 + `-W wrapcolumn`: specifies roughly where the message should be wrapped. The default value is `-W 40` i.e. wrap words at or before the 40th column.
-+ `-F cowfile`: specifies a particular cow picture file (`cowfile`) to use. _The implementation of this feature is optional and yields extra credits (see Section [Assignment Gradings](#assignment-grading) for more details)._
++ `-F cowfile`: specifies a particular cow picture file (`cowfile`) to use. _The implementation of this feature is optional and yields extra credits (see Section [Assignment Grading](#assignment-grading) for more details)._
 + `-J alignment`: specifies how the message should be aligned inside the text window (billboard). Possible alignment values are `-J c` (centered), and `-J r` (right justified). It is not necessary an option for the left-alignment, since this is the default behavior.
 
 See below the same message presented earlier in default mode (left aligned) now is presented with **center alignment** (40 columns), 
@@ -185,7 +185,7 @@ Remember that some options take one argument, thus they must be treated as a pai
 
 # Execution
 
-After receiving and parsing the command-line arguments and acquiring the message (either via CLI ou reading the _stdin_), your program should modify the cow appearance accordingly (the preset modes have priority over a manual specification of eyes/tongue), and format the message so that it is displayed as requested by the user.
+After receiving and parsing the command-line arguments and acquiring the message (either via CLI or reading the _stdin_), your program should modify the cow appearance accordingly (the preset modes have priority over a manual specification of eyes/tongue), and format the message so that it is displayed as requested by the user.
 
 To make it easy to control how the message is displayed I recommend to break each individual string into its components or **tokens**, i.e. the individual words (no spaces). After creating this list of tokens it becomes easier to create new strings with the alignment and length we wish. For that purpose I recommend the use of [`std::ostringstream`](https://en.cppreference.com/w/cpp/io/basic_ostringstream).
 
@@ -234,7 +234,7 @@ The `Cow` class also keeps track of the cow's mood the user request via CLI, and
 
 ## The `BillBoard` class
 
-The second entity is the `BillBoard` class that represents a frame where the user's message should be displayed on. The text is always surrounded by a frame. The frame of a single line message is different from a multiline message, as depicted below.
+The second entity is the `BillBoard` class that represents a frame where the user's message should be displayed on. The text is always surrounded by a frame. The frame of a single line message is different from a multi-line message, as depicted below.
 
 ```
  _______________________________
@@ -322,7 +322,7 @@ Wrap column value must be in range [1,100]. Assuming -W 40 (default behavior)
                 ||     ||
 
 ```
-Other possible erros are a missing cowfile (if you are implemente this extra feature), invalid arguments for argument-based options, etc.
+Other possible errors are a missing cowfile (if you are implementing this extra feature), invalid arguments for argument-based options, etc.
 
 # Assignment Grading
 
@@ -362,7 +362,7 @@ The [`author.md`](docs/author.md) file should contain a brief description of the
 ## Extra credits
 You may earn extra credits if:
 
- - **[15 points]** Your program support the option `-F cow_file` that read a `cow_file` which contains a new appearance for the cow. The cow file description should follow the tradicion `.cow` file, the same way it is support by the original `cowsay`program.
+ - **[15 points]** Your program support the option `-F cow_file` that read a `cow_file` which contains a new appearance for the cow. The cow file description should follow the traditional `.cow` file, the same way it is support by the original `cowsay`program.
  - **[10 points]** You add the option to justify the text with `-J j`. This option introduces some white spaces among some words so that all lines would occupy the entire line space and the last word touches the right border. In case we are interested in this option and has any doubts on this concept, ask the instructor for clarification.
 
 # Authorship and Collaboration Policy
